@@ -103,3 +103,21 @@ solution you would want to show your friends?*/
             return this.name + " meows";
             }
         }
+
+           // ASCII Total
+// ********************************************************************************
+// You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all printable ASCII characters.
+
+// Examples:
+
+// uniTotal("a") == 97
+// uniTotal("aaa") == 291
+   // Решение:
+      function uniTotal (string) {
+
+        var count = 0;
+        for(let i = 0; i < string.length; i++){
+        count = count + string.charCodeAt(i);
+        }
+        return count;
+    }
