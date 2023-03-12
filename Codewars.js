@@ -207,13 +207,13 @@ complete this Kata using ES6 syntax and features.
         this.lastName = lastName;
         this.age = age;
         this.gender = gender;
-          }
+          };
       
         sayFullName(){
           return `${this.firstName} ${this.lastName}`;
-          }
+          };
       }
-      Person.greetExtraTerrestrials = function(raceName){
+      Person.greetExtraTerrestrials = raceName => {
           return `Welcome to Planet Earth ${raceName}`;
         }
   
