@@ -266,3 +266,31 @@ Provided is a function find which accepts two parameters
      // Решение:
         const find =(a,el) => {return a.indexOf(el)>=0 ? a.indexOf(el):"Not found";}
 
+      /* Unfinished Loop - Bug Fixing #1
+      *****************************************************************************************
+Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished for loop!
+*/
+   // Решение:
+      function createArray(number){
+        var newArray = [];
+        
+        for(var counter = 1; counter <= number; counter++){
+          newArray.push(counter);
+        }
+        
+        return newArray;
+      }
+
+      
+/* The 'if' function
+*****************************************************************************************
+Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
+
+When bool is truthy, func1 should be called, otherwise call the func2.
+
+Example:
+_if(true, function(){console.log("True")}, function(){console.log("false")})
+// Logs 'True' to the console.
+*/
+// Решение:
+const _if = (bool, func1, func2) => console.log(bool ? func1() : func2());
