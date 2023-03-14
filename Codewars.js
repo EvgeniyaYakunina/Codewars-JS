@@ -217,3 +217,39 @@ complete this Kata using ES6 syntax and features.
           return `Welcome to Planet Earth ${raceName}`;
         }
   
+
+    /* Chuck Norris VII - True or False? (Beginner)
+    *****************************************************************************************
+It's a well known fact that anything Chuck Norris wants, he gets. As a result Chuck very rarely has to use the word false.
+
+It is a less well known fact that if something is true, and Chuck doesn't want it to be, Chuck can scare the truth with his massive biceps, and it automatically becomes false.
+
+Your task is to be more like Chuck (ha! good luck!). You must return false without ever actually using the word false...
+
+Go show some truth who's boss!
+*/
+    // Решение:
+        function ifChuckSaysSo(){
+
+          return !true
+        }
+
+
+        
+   /*ES6 string addition
+*****************************************************************************************
+It is easy to join two strings together like this string1 + string2.
+
+Another way to get the desired result would be with string1.concat(string2)
+
+ES6 has introduced another way of joining strings. Your task is to find out what this is and write a function that will add two strings together, there must be a space between the two strings.
+
++ , .concat() & .join() will not be allowed in this exercise. I have also removed some other methods that can be used to cheat!
+
+If one of the arguments is a number your code must coerce it into being a string.
+*/
+   // Решение:
+      function joinStrings(string1, string2){
+      
+        return `${string1} ${string2}`
+      }
