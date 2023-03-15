@@ -267,7 +267,7 @@ Provided is a function find which accepts two parameters
         const find =(a,el) => {return a.indexOf(el)>=0 ? a.indexOf(el):"Not found";}
 
       /* Unfinished Loop - Bug Fixing #1
-      *****************************************************************************************
+
 Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his unfinished for loop!
 */
    // Решение:
@@ -280,10 +280,11 @@ Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his 
         
         return newArray;
       }
+  //   *****************************************************************************************
 
       
-/* The 'if' function
-*****************************************************************************************
+    /* The 'if' function
+
 Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
 
 When bool is truthy, func1 should be called, otherwise call the func2.
@@ -293,4 +294,51 @@ _if(true, function(){console.log("True")}, function(){console.log("false")})
 // Logs 'True' to the console.
 */
 // Решение:
-const _if = (bool, func1, func2) => console.log(bool ? func1() : func2());
+    const _if = (bool, func1, func2) => console.log(bool ? func1() : func2());
+// *****************************************************************************************
+
+
+    /* Beginner Series #1 School Paperwork
+Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+
+Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+Example:
+n= 5, m=5: 25
+n=-5, m=5:  0
+*/
+   // Решение:
+      function paperwork(n, m) {
+        if(n > 0 && m > 0){
+          return n * m;
+          }
+        return 0;
+      }
+// *****************************************************************************************
+
+
+    /* Convert a Boolean to a String
+DESCRIPTION:
+Implement a function which convert the given boolean value into its string representation.
+Note: Only valid inputs will be given.
+*/
+    // Решение:
+        function booleanToString(b){
+        
+          if(b) return "true";
+          return "false";
+        }
+ // *****************************************************************************************
+
+   /* Simple multiplication
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+*/
+   // Решение:
+      function simpleMultiplication(number) {
+        
+        if(number % 2 == 0){
+          return number * 8;
+        }
+      return number * 9;
+      }
+ // *****************************************************************************************
