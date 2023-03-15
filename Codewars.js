@@ -342,3 +342,57 @@ This kata is about multiplying a given number by eight if it is an even number a
       return number * 9;
       }
  // *****************************************************************************************
+
+    /* Reversed Words
+ Complete the solution so that it reverses all of the words within the string passed in.
+
+Words are separated by exactly one space and there are no leading or trailing spaces.
+
+Example(Input --> Output):
+
+"The greatest victory is that which requires no battle" --> 
+"battle no requires which that is victory greatest The"
+*/
+   // Решение:
+      function reverseWords(str){
+        return str.split(` `).reverse().join(` `); 
+      }
+  // 2 вариант:
+      const reverseWords = str => str.split(` `).reverse().join(` `)
+ // *****************************************************************************************
+
+
+      /* Cat years, Dog years
+      Kata Task
+I have a cat and a dog.
+
+I got them at the same time as kitten/puppy. That was humanYears years ago.
+
+Return their respective ages now as [humanYears,catYears,dogYears]
+
+NOTES:
+
+humanYears >= 1
+humanYears are whole numbers only
+Cat Years
+15 cat years for first year
++9 cat years for second year
++4 cat years for each year after that
+Dog Years
+15 dog years for first year
++9 dog years for second year
++5 dog years for each year after that
+*/
+   // Решение:
+      var humanYearsCatYearsDogYears = function(humanYears) {
+        // Your code here!
+        if(humanYears == 1){
+        return [1,15,15];
+        } if(humanYears == 2){
+        return [2,24,24];
+          }
+        return [humanYears, 24 + (humanYears - 2) * 4,
+        24 + (humanYears - 2) * 5];
+          
+      }
+ // *****************************************************************************************
