@@ -436,3 +436,32 @@ Examples
 // *****************************************************************************************
 
 
+   /* String Templates - Bug Fixing #5
+Oh no! Timmy hasn't followed instructions very carefully and forgot
+ how to use the new String Template feature, 
+ Help Timmy with his string template so it works as he expects!
+ */
+   // Решение:
+      function buildString(...template){
+        return `I like ${template.join(', ')}!`;
+      }
+// *****************************************************************************************
+
+   /* Sum The Strings
+Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
+
+Example: (Input1, Input2 -->Output)
+
+"4",  "5" --> "9"
+"34", "5" --> "39"
+"", "" --> "0"
+"2", "" --> "2"
+"-5", "3" --> "-2"
+*/
+   // Решение:
+      const sumStr = (a,b) => {
+        if(a === '') a = '0';
+        if(b === '') b = '0';
+        return `${parseInt(a) + parseInt(b)}`;
+      }
+// *****************************************************************************************
