@@ -465,3 +465,70 @@ Example: (Input1, Input2 -->Output)
         return `${parseInt(a) + parseInt(b)}`;
       }
 // *****************************************************************************************
+
+
+   /* Basic variable assignment
+This code should store "codewa.rs" as a variable called name 
+but it's not working. Can you figure out why?
+var a == "code";
+var b == "wa.rs";
+var name == a + b;
+*/
+   // Решение:
+      var a = "code";
+      var b = "wa.rs";
+      var name = a + b;
+// *****************************************************************************************
+
+
+   /* Grasshopper - Basic Function Fixer
+I created this function to add five to any number that was 
+passed in to it and return the new value. It doesn't throw any errors
+ but it returns the wrong number.
+
+Can you help me fix the function?
+*/
+   // Решение:
+        function addFive(num) {
+          var total = num + 5
+          return total
+        }
+// *****************************************************************************************
+
+   /* Keep up the hoop
+Alex just got a new hula hoop, he loves it but feels discouraged 
+because his little brother is better than him
+
+Write a program where Alex can input (n) how many times the hoop goes
+ round and it will return him an encouraging message :)
+
+If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+If he doesn't get 10 hoops, return the string "Keep at it until you get it".
+*/
+   // Решение:
+   function hoopCount (n) {
+  
+    if(n >= 10){
+      return "Great, now move on to tricks";
+    }
+    return "Keep at it until you get it";
+  }
+// 2 решение:
+  const hoopCount = n => n < 10 ? 'Keep at it until you get it' : 'Great, now move on to tricks';
+// *****************************************************************************************
+
+   /* Opposites Attract
+Timmy & Sarah think they are in love, but around where they live, 
+they will only know once they pick a flower each.
+ If one of the flowers has an even number of petals and the other has an odd
+  number of petals it means they are in love.
+
+Write a function that will take the number of petals of each flower and 
+return true if they are in love and false if they aren't.
+*/
+   // Решение:
+        function lovefunc(flower1, flower2){
+        
+          return flower1 % 2 !== flower2 % 2;
+        }
+// *****************************************************************************************
