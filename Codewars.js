@@ -541,3 +541,35 @@ a string it should return "Error".
    // Решение:
         const problem = x =>typeof x === "number" ? x * 50 + 6:"Error"
 // *****************************************************************************************
+
+   /* Basic Mathematical Operations
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
+
+Examples(Operator, value1, value2) --> output
+('+', 4, 7) --> 11
+('-', 15, 18) --> -3
+('*', 5, 5) --> 25
+('/', 49, 7) --> 7
+*/
+   // Решение:
+        basicOp = (operation, value1, value2) => eval(value1 + operation + value2)
+
+   // 2 вариант:
+        function basicOp (operation, value1, value2){
+          
+          switch(operation){
+              case "+": return value1 + value2;
+              case "-": return value1 - value2;
+              case "*": return value1 * value2;
+              case "/": return value1 / value2;
+          }
+        }
+// *****************************************************************************************
+
+   /* You Can't Code Under Pressure #1
+Code as fast as you can! You need to double the integer and return it.
+*/
+   // Решение:
+        const doubleInteger = i => 2 * i;
+// *****************************************************************************************
