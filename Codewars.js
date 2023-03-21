@@ -567,9 +567,38 @@ Examples(Operator, value1, value2) --> output
         }
 // *****************************************************************************************
 
-   /* You Can't Code Under Pressure #1
+   /* You Can't Code Under Pressure #1/
 Code as fast as you can! You need to double the integer and return it.
 */
    // Решение:
         const doubleInteger = i => 2 * i;
+// *****************************************************************************************
+
+
+   /* You only need one - Beginner/
+You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+
+Array can contain numbers or strings. X can be either.
+
+Return true if the array contains the value, false if not.
+*/
+   // Решение:
+       const check = (a, x) => a.includes(x);
+// *****************************************************************************************
+
+
+   /* Count the Monkeys!
+You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+
+As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+
+For example(Input --> Output):
+
+10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ 1 --> [1]
+ */
+   // Решение:
+      function monkeyCount(n) {
+         return Array.from(Array(n), (_,i)=>i+1)
+         }
 // *****************************************************************************************
