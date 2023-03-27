@@ -675,3 +675,50 @@ rooms object to get your game working again.
             },
          }
 // ***************************************************************************************** 
+
+   /* 5 without numbers !!
+Write a function that always returns 5
+
+Sounds easy right? Just bear in mind that you can't use 
+any of the following characters: 0123456789*+-/
+*/
+   // Решение:
+         function unusualFive() {
+            return ["one", "two", "three", "four", "five"].length;
+         }
+// ***************************************************************************************** 
+
+   /* Switch/Case - Bug Fixing #6
+Oh no! Timmy's evalObject function doesn't work.
+He uses Switch/Cases to evaluate the given properties of an object,
+ can you fix timmy's function?
+*/
+   // Решение:
+         function evalObject(value){
+            var result = 0;
+            
+            switch(value.operation){
+            case'+': result = value.a + value.b;
+               break;
+            case'-': result = value.a - value.b;
+               break;
+            case'/': result = value.a / value.b;
+               break;
+            case'*': result = value.a * value.b;
+               break;
+            case'%': result = value.a % value.b;
+               break;
+            case'^': result = Math.pow(value.a, value.b);
+            }
+            return result;
+         }
+// ***************************************************************************************** 
+
+   /* Convert boolean values to strings 'Yes' or 'No'.
+Complete the method that takes a boolean value and return a "Yes" 
+string for true, or a "No" string for false.
+*/
+   // Решение:
+         const boolToWord = bool =>
+            bool == true ? 'Yes' : 'No';
+// *****************************************************************************************
