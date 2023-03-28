@@ -722,3 +722,52 @@ string for true, or a "No" string for false.
          const boolToWord = bool =>
             bool == true ? 'Yes' : 'No';
 // *****************************************************************************************
+
+   /* Returning Strings
+Make a function that will return a greeting statement that uses an input;
+ your program should return, "Hello, <name> how are you doing today?".
+
+[Make sure you type the exact thing I wrote or the program may not execute properly]
+*/
+   // Решение:
+         function greet(name){
+            return `Hello, ${name} how are you doing today?`
+         }
+// *****************************************************************************************
+
+   /* Name on billboard
+You can print your name on a billboard ad.
+ Find out how much it will cost you. Each character has a default price of £30,
+  but that can be different if you are given 2 parameters instead of 1.
+You can not use multiplier "*" operator.
+If your name would be Jeong-Ho Aristotelis, 
+ad would cost £600. 20 leters * 30 = 600 (Space counts as a character).
+*/
+   // Решение:
+         function billboard(name, price = 30){
+            let cost = 0;
+            for(var i = 0; i < name.length; i++) {
+               cost += price;
+               }
+            return cost;
+            } 
+// *****************************************************************************************
+
+   /* If you can't sleep, just count sheep!!
+If you can't sleep, just count sheep!!
+
+Task:
+Given a non-negative integer, 3 for example,
+ return a string with a murmur: "1 sheep...2 sheep...3 sheep...". 
+Input will always be valid, i.e. no negative integers.
+*/
+   // Решение:
+         var countSheep = function (num){
+         
+            let count = "";
+            for(let i = 1; i <= num; i++){
+               count += `${i} sheep...`;
+               }
+               return count;
+         }
+// *****************************************************************************************
