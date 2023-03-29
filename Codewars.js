@@ -771,3 +771,46 @@ Input will always be valid, i.e. no negative integers.
                return count;
          }
 // *****************************************************************************************
+
+   /* Removing Elements
+Take an array and remove every second element from the array.
+ Always keep the first element and start removing with the next element.
+
+Example:
+["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+
+None of the arrays will be empty, so you don't have to worry about that!
+*/
+   // Решение:
+         function removeEveryOther(arr){
+            var Array =[];
+            for(let i = 0; i < arr.length; i += 2){
+               Array.push(arr[i]);
+               }
+            return Array;
+         }
+// *****************************************************************************************
+
+   /* My head is at the wrong end!
+You're at the zoo... all the meerkats look weird. 
+Something has gone terribly wrong - someone has gone and switched 
+their heads and tails around!
+
+Save the animals by switching them back. You will be given an array 
+which will have three values (tail, body, head). It is your job to re-arrange 
+the array so that the animal is the right way round (head, body, tail).
+
+Same goes for all the other arrays/lists that you will get in the tests: 
+you have to change the element positions with the same exact logics
+
+Simples!
+*/
+   // Решение:
+         function fixTheMeerkat(arr) {
+         
+            const reversed = arr.reverse();
+            return arr;
+         }
+// *****************************************************************************************
+
+
