@@ -813,4 +813,73 @@ Simples!
          }
 // *****************************************************************************************
 
+   /*  Will you make it?
+You were camping with your friends far away from home, 
+but when it's time to go back, you realize that your fuel is 
+running out and the nearest pump is 50 miles away! You know that on average, 
+your car runs on about 25 miles per gallon. There are 2 gallons left.
 
+Considering these factors, write a function that tells you if 
+it is possible to get to the pump or not.
+
+Function should return true if it is possible and false if not.
+*/
+  // Решение:
+         const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+            return mpg * fuelLeft >= distanceToPump
+         };
+// *****************************************************************************************
+
+   /* Grasshopper - Debug
+Debug celsius converter
+Your friend is traveling abroad to the United States
+ so he wrote a program to convert fahrenheit to celsius. 
+ Unfortunately his code has some bugs.
+
+Find the errors in the code to get the celsius converter working properly.
+
+To convert fahrenheit to celsius:
+
+celsius = (fahrenheit - 32) * (5/9)
+Remember that typically temperatures in the current weather 
+conditions are given in whole numbers. It is possible for temperature 
+sensors to report temperatures with a higher accuracy such as to the nearest tenth.
+ Instrument error though makes this sort of accuracy unreliable for
+ many types of temperature measuring sensors.
+*/
+   // Решение:
+         function weatherInfo (temp) {
+            var c = convertToCelsius(temp);
+            if (c <= 0)
+            return c + " is freezing temperature";
+            else
+            return c + " is above freezing temperature"; 
+         }
+         
+         function convertToCelsius (temperature) {
+            var celsius = (temperature - 32) * (5/9);
+            return celsius;
+         }
+// *****************************************************************************************
+
+   /* Grasshopper - Messi goals function
+Messi goals function
+Messi is a soccer player with goals in three leagues:
+
+LaLiga
+Copa del Rey
+Champions
+Complete the function to return his total number of goals in all three leagues.
+
+Note: the input will always be valid.
+
+For example:
+
+5, 10, 2  -->  17
+*/
+   // Решение:
+         function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+            var total = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+            return total;
+         }
+// *****************************************************************************************
