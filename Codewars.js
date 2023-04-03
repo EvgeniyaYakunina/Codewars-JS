@@ -883,3 +883,67 @@ For example:
             return total;
          }
 // *****************************************************************************************
+
+   /* Enumerable Magic #4 - True for None?
+Create a method none? (JS none) that accepts an array 
+and a block (JS: a function), and returns true if the block 
+(/function) returns true for none of the items in the array.
+An empty list should return true.
+*/
+   // Решение:
+         function none(arr, fun){
+            return !arr.some(fun)
+         }
+// *****************************************************************************************
+
+   /* Enumerable Magic #1 - True for All?
+Task
+Create a method all which takes two params:
+
+a sequence
+a function (function pointer in C)
+and returns true if the function in the params returns true
+for every element in the sequence. Otherwise, it should return false. 
+If the sequence is empty, it should return true, since technically nothing failed the test.
+
+Example
+all((1, 2, 3, 4, 5), greater_than_9) -> false
+all((1, 2, 3, 4, 5), less_than_9)    -> True
+*/
+   // Решение:
+         function all( arr, fun ){
+         
+            return arr.every(fun)
+         }
+// *****************************************************************************************
+
+   /* Training JS #9: loop statement --while and do..while
+Task
+Complete function padIt, which accepts 2 parameters:
+
+str: a string representing the string to pad. 
+We will pad it with "*" symbols on its left side and on its right side.
+n: a number indicating how many times to pad the string.
+Behaviour
+You need to write a loop statement within the function that loops n times. 
+Each time through the loop it will add one * to str, alternating 
+on which side it is padded: the first time will add a * to the left side of str,
+ the second time will add a * to the right side, and so on.
+
+Finally, return the padded string.
+*/
+   // Решение:
+         function padIt(str,n){
+      
+            while(n >0){
+            if (n % 2){
+               str = "*" + str;
+            }else{
+               str = str + "*";
+            }
+            n--;
+            }
+            return str;
+         }
+// *****************************************************************************************
+
