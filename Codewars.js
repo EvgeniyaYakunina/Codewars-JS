@@ -1036,3 +1036,90 @@ since midnight in milliseconds.
             return h * 3600000 + m * 60000 + s * 1000
          }
 // ***************************************************************************************** 
+
+/* Switch it Up!
+When provided with a number between 0-9, return it in words.
+
+Input :: 1
+
+Output :: "One".
+
+If your language supports it, try using a switch statement.
+*/
+// Решение:
+function switchItUp(number){
+   switch(number){
+        case 0: 
+       return "Zero";
+       break;
+       case 1: 
+       return "One";
+       break;
+        case 2: 
+       return "Two";
+       break;
+        case 3: 
+       return "Three";
+       break;
+        case 4: 
+       return "Four";
+       break;
+        case 5: 
+       return "Five";
+       break;
+        case 6: 
+       return "Six";
+       break;
+        case 7: 
+       return "Seven";
+       break;
+        case 8: 
+       return "Eight";
+       break;
+        case 9: 
+       return "Nine";
+       break;
+   }
+   }
+// ********************************************************************************************
+
+   /* Return the day
+   Complete the function which returns the weekday according to the input number:
+
+1 returns "Sunday"
+2 returns "Monday"
+3 returns "Tuesday"
+4 returns "Wednesday"
+5 returns "Thursday"
+6 returns "Friday"
+7 returns "Saturday"
+Otherwise returns "Wrong, please enter a number between 1 and 7"
+*/
+// Решение:
+function whatday(num) { 
+   switch(num){
+   case 1: return "Sunday"
+   case 2: return "Monday"
+   case 3: return "Tuesday"
+   case 4: return "Wednesday"
+   case 5: return "Thursday"
+   case 6: return "Friday"
+   case 7: return "Saturday"
+   default: return "Wrong, please enter a number between 1 and 7"
+ }
+ }
+// ********************************************************************************************
+
+/* Duck Duck Goose
+The objective of Duck, duck, goose is to walk in a circle, 
+tapping on each player's head until one is chosen.
+
+Task: Given an array of Player objects (an array of associative arrays in PHP)
+ and an index (1-based), return the name of the chosen Player
+ (name is a property of Player objects, e.g Player.name)
+*/
+// Решение:
+function duckDuckGoose(players, goose) {
+   return players[(goose - 1)% players.length].name
+ }
+// ********************************************************************************************
