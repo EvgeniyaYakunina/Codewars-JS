@@ -1095,22 +1095,22 @@ function switchItUp(number){
 7 returns "Saturday"
 Otherwise returns "Wrong, please enter a number between 1 and 7"
 */
-// Решение:
-function whatday(num) { 
-   switch(num){
-   case 1: return "Sunday"
-   case 2: return "Monday"
-   case 3: return "Tuesday"
-   case 4: return "Wednesday"
-   case 5: return "Thursday"
-   case 6: return "Friday"
-   case 7: return "Saturday"
-   default: return "Wrong, please enter a number between 1 and 7"
- }
- }
+   // Решение:
+         function whatday(num) { 
+            switch(num){
+            case 1: return "Sunday"
+            case 2: return "Monday"
+            case 3: return "Tuesday"
+            case 4: return "Wednesday"
+            case 5: return "Thursday"
+            case 6: return "Friday"
+            case 7: return "Saturday"
+            default: return "Wrong, please enter a number between 1 and 7"
+         }
+         }
 // ********************************************************************************************
 
-/* Duck Duck Goose
+   /* Duck Duck Goose
 The objective of Duck, duck, goose is to walk in a circle, 
 tapping on each player's head until one is chosen.
 
@@ -1118,8 +1118,82 @@ Task: Given an array of Player objects (an array of associative arrays in PHP)
  and an index (1-based), return the name of the chosen Player
  (name is a property of Player objects, e.g Player.name)
 */
-// Решение:
-function duckDuckGoose(players, goose) {
-   return players[(goose - 1)% players.length].name
- }
+   // Решение:
+         function duckDuckGoose(players, goose) {
+            return players[(goose - 1)% players.length].name
+         }
+// ********************************************************************************************
+
+   /* Welcome to the City
+Create a method sayHello/say_hello/SayHello that takes as input a name, city, 
+and state to welcome a person. Note that name will be an array consisting 
+of one or more values that should be joined together with one space between each, 
+and the length of the name array in test cases will vary.
+
+Example:
+sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')
+This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
+*/
+   // Решение:
+         function sayHello( name, city, state ) {
+            return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`
+         }
+ // ********************************************************************************************
+
+    /* Welcome!
+ Your start-up's BA has told marketing that your website has a large audience
+in Scandinavia and surrounding countries. Marketing thinks it would be great to
+welcome visitors to the site in their own language. Luckily you already use an API
+that detects the user's location, so this is an easy win.
+
+The Task
+Think of a way to store the languages as a database (eg an object).
+ The languages are listed below so you can copy and paste!
+Write a 'welcome' function that takes a parameter 'language' (always a string),
+ and returns a greeting - if you have it in your database. 
+ It should default to English if the language is not in the database, 
+ or in the event of an invalid input.
+
+The Database
+english: 'Welcome',
+czech: 'Vitejte',
+danish: 'Velkomst',
+dutch: 'Welkom',
+estonian: 'Tere tulemast',
+finnish: 'Tervetuloa',
+flemish: 'Welgekomen',
+french: 'Bienvenue',
+german: 'Willkommen',
+irish: 'Failte',
+italian: 'Benvenuto',
+latvian: 'Gaidits',
+lithuanian: 'Laukiamas',
+polish: 'Witamy',
+spanish: 'Bienvenido',
+swedish: 'Valkommen',
+welsh: 'Croeso'
+*/
+   // Решение:
+         function greet(language) {
+            return langs[language] || langs['english']
+            }
+            var langs ={
+            english: 'Welcome',
+            czech: 'Vitejte',
+            danish: 'Velkomst',
+            dutch: 'Welkom',
+            estonian: 'Tere tulemast',
+            finnish: 'Tervetuloa',
+            flemish: 'Welgekomen',
+            french: 'Bienvenue',
+            german: 'Willkommen',
+            irish: 'Failte',
+            italian: 'Benvenuto',
+            latvian: 'Gaidits',
+            lithuanian: 'Laukiamas',
+            polish: 'Witamy',
+            spanish: 'Bienvenido',
+            swedish: 'Valkommen',
+            welsh: 'Croeso'
+            }
 // ********************************************************************************************
