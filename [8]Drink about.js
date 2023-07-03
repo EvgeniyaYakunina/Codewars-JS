@@ -3,9 +3,9 @@
 function peopleWithAgeDrink(old) {
     let age = old;
     switch (true) {
-        case age <= 14:
+        case age <= 13:
             return 'drink toddy';
-        case age <= 18:
+        case age < 18:
             return 'drink coke';
         case age < 21:
             return 'drink beer';
